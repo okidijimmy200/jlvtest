@@ -2,9 +2,9 @@ import React from 'react'
 
 import './Enterprise.scss'
 
-const Img1 = require('../../../images/about-img-1.png')
-const Img2 = require('../../../images/about-img-2.png')
-const Img3 = require('../../../images/about-img-3.png')
+import Img1 from '../../../images/about-img-1.png'
+import Img2 from '../../../images/about-img-2.png'
+import Img3 from '../../../images/about-img-3.png'
 
 export default function Enterprise() {
   return (

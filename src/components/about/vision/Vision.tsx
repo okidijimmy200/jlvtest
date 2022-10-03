@@ -2,8 +2,8 @@ import React from 'react'
 import Enterprise from '../enterprises/Enterprise'
 import './Vision.scss'
 
-const MissionPic = require('../../../images/Mission.png')
-const VisonPic = require('../../../images/Vision.png')
+import MissionPic from '../../../images/Mission.png'
+import VisonPic from '../../../images/Vision.png'
 
 export default function Vision() {
   return (

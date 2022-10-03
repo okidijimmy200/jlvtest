@@ -9,7 +9,7 @@ import { makeStyles } from '@material-ui/core/styles'
 import emailjs from '@emailjs/browser';
 import './Form.scss'
 
-const Logo = require('../../../images/Logo.png')
+import Logo from '../../../images/Logo.png'
 
 const useStyles = makeStyles(theme => ({
     card: {

@@ -2,9 +2,9 @@ import React from 'react'
 import './Features.scss'
 import { Link } from 'react-router-dom'
 
-const Cow = require('../../../images/icon-1.png')
-const Diary = require('../../../images/icon-2.jpg')
-const Resort = require('../../../images/icon-3.png')
+import Cow from '../../../images/icon-1.png'
+import Diary from '../../../images/icon-2.jpg'
+import Resort from '../../../images/icon-3.png'
 
 interface ChildProps  {
     onclick?: () => void;

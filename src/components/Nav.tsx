@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import { NavLink, Link } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link';
 
-const Logo = require('../images/Logo.png')
+import  Logo from '../images/Logo.png'
 export default function Nav() {
         const [hovered, setHovered] = useState(false);
 

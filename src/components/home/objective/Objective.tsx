@@ -4,8 +4,8 @@ import emailjs from '@emailjs/browser';
 
 import './Objective.scss'
 
-const Farm1 = require('../../../images/Card-2.png')
-const Cottage = require('../../../images/Card-1.png')
+import Farm1 from '../../../images/Card-2.png';
+import Cottage from '../../../images/Card-1.png'
 
 export default function Objective() {
   const [modal, setModal] = useState(false);

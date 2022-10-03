@@ -1,9 +1,9 @@
 import React from 'react'
 import './AboutFeature.scss'
 
-const Farm1 = require('../../../images/Slide-1.png')
-const Farm2 = require('../../../images/Slide-2.png')
-const Farm3 = require('../../../images/Slide-3.png')
+import Farm1 from '../../../images/Slide-1.png'
+import Farm2 from '../../../images/Slide-2.png'
+import Farm3 from '../../../images/Slide-3.png'
 
 interface ChildProps2  {
     farm: boolean;
@@ -50,10 +50,7 @@ export default function AboutFeature({farm, diary, resort, onclick, diaryHandler
                         <div className='features--header'>
                         <h3 className="heading-tetiary u-margin-bottom-small">JLV Mixed Farm</h3>
                         <p className="paragraph">
-                        Nestled in the gently sloping hills of Rubaya, Kashari, Mbarara district, lies JLV Mixed farm: A
-                        model Farm like no other! Featuring a wide array of livestock, food crops, cash crops and all
-                        things natural, we are a haven for all avid farmers. Be it someone who is willing to learn about
-                        farming and from scratch, or someone trying to improve on the knowledge they already have.
+
                         </p>
                         </div>
 }
