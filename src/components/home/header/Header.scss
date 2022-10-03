@@ -1,0 +1,186 @@
+// header section
+
+/* formatting the header element */
+.header {    
+    height: 75vh; /* vh meaning viewport Height so 95 of default view height of the screen */   
+    background-image:linear-gradient(
+        to left bottom,
+        rgba(#225901, 100),
+        rgba(#04220700, 0.3)), 
+        url(../../../images/Bg.jpg);   
+    background-size: cover;  /* background cover takes over the width of view port */   
+    background-position: top; 
+
+    // nesting the elements
+    /* styling the logo */
+
+    &__logo {
+     display: flex;
+
+     &__icon {
+        margin-right: .4rem;
+        &--size {
+            height: 2.5rem;
+            width: 2.5rem;
+        }
+     }
+
+     &__text {
+        align-self: center;
+        font-size: 1.7rem;
+        font-weight: 600;
+        color: #fff;
+     }
+    }
+    
+    /* styling the heading primary */
+    
+    &__text-box {
+        /* centering the box in the middle */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        /* we use the transform property of css to place the text at the center of browser*/
+        transform: translate(-50%, -50%);
+        /* aligning the btn to center  */
+        text-align: center;
+    }
+}
+
+.heading-primary {
+    color: #fff;
+    margin-bottom: 1rem;
+    
+    &--main {
+        /* display them as block elements to separate the two span elements */
+        display: block;
+        font-size: 3.5rem;
+        font-weight: 700;
+        letter-spacing: 0;
+        text-decoration: underline;
+        /* specify the name of animation in the text to be moved */
+        animation-name: moveInLeft;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;   
+    
+    }
+    &--sub {
+        display: block;
+        font-size: 1.4rem;
+        font-weight: 700;
+        animation: moveInRight 1s ease-out;
+    }
+}
+
+// h2 for the about section
+.heading-secondary {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    // making the h2 text green
+    display: inline-block;    
+    letter-spacing: .2rem;
+}
+.heading-tetiary {
+    font-size: 1.6rem;
+    font-weight: 700;
+
+    @media only screen and (max-width: 1245px) {
+        font-size: 1.4rem;
+        font-weight: 700;
+        
+    }
+}
+
+.paragraph {
+    font-size:1.6rem;
+    // to remove space in the last part of the paragraph
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+
+    &__bar {
+        display: flex;
+        margin-right: 1rem;
+        align-self: center;
+
+        &__list {
+            list-style: none;
+            display: flex;
+        }
+
+        &__item  {
+        font-size: 1.7rem;
+        font-weight: 600;
+        &:not(:last-child) {
+                margin-right: 5rem;
+        }
+            
+    }
+        &__link {
+            text-decoration: none;
+            color: #fff; 
+            cursor: pointer;
+            &:hover {
+                color: #70FF00;
+            }
+            &::after {
+                content: "";
+                display: block;
+                margin: auto;
+                height: 3px;
+                width: 0;
+                top: 5px;
+                background: transparent;
+                transition: all 0.3s;
+                
+              }
+              &:hover::after {
+                width: 100%;
+                background: #70FF00;
+                color: #70FF00;
+              }
+        }
+        &__hash {
+            text-decoration: none;
+            color: #fff; 
+            cursor: pointer;
+            &:hover {
+                color: #70FF00;
+            }
+            &::after {
+                content: "";
+                display: block;
+                margin: auto;
+                height: 3px;
+                width: 0;
+                top: 5px;
+                background: transparent;
+                transition: all 0.3s;
+                
+              }
+              &:hover::after {
+                width: 100%;
+                background: #70FF00;
+                color: #70FF00;
+              }
+        }
+
+        &__active-nav {
+            color: #70FF00;
+            text-decoration: none;
+            border-bottom: 3.5px solid #70FF00;
+            padding: .4rem;
+        }
+    }
+}
+
+.heading-title {
+    color: #348403 !important;
+}

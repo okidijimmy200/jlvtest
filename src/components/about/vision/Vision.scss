@@ -1,0 +1,87 @@
+.section-vision {
+    padding: 2rem 0 37rem 0;
+    background-color: #E7EBFF;
+}
+
+.vision {
+    margin-bottom: 2rem;
+    padding: 4rem 0 47rem 0;
+    font-family: Roboto;
+
+    &__box {
+        &:not(:last-child) {
+            margin-bottom: 4rem;
+        }
+    }
+    &__content {
+        width: 80%;
+        margin: 0 auto;
+
+    }
+    &__text {
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 17.58px;
+        letter-spacing: 1%;
+        text-align: center;
+    }
+    &__picture {
+        background-image: url(../../../images/about-vision.png);
+        height: 30rem;
+        width: auto;
+        background-size: cover;  /* background cover takes over the width of view port */   
+        background-position: top; 
+
+        @media only screen and (max-width: 1221px) {
+            // padding: 0 2rem;
+            height: 30rem;
+            width: 50rem;
+        }
+
+        @media only screen and (max-width: 950px) {
+            // padding: 0 2rem;
+            height: 30rem;
+            width: auto;
+        }
+
+        &--2 {
+            background-image: url(../../../images/player.png);
+            height: 10rem;
+            width: auto;
+            background-size: cover;  /* background cover takes over the width of view port */   
+            background-position: top; 
+            border-bottom-left-radius: 1rem;
+            border-bottom-right-radius: 1rem;
+
+            @media only screen and (max-width: 1221px) {
+                // padding: 0 2rem;
+                height: 10rem;
+                width: 50rem;
+            }
+            @media only screen and (max-width: 950px) {
+                height: 10rem;
+                width: auto;
+            }
+        }
+
+    }
+
+    &__statement {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__pic {
+        height: 10.9rem;
+        width: 10.9rem;
+        border-radius: 50%;
+    }
+    &__box-1 {
+        height: 17rem;
+
+        &-heading {
+            width: 13rem;
+            margin: 0 auto;
+        }
+    }
+}

@@ -1,0 +1,317 @@
+.section-objective {
+    transition: 1s;
+    background-color:rgba(146, 205, 40, 0.21)  ;
+    padding: 3rem 0 42rem 0;
+
+    @media only screen and (max-width: 1065px) {
+        padding: 3rem 0 35rem 0;
+        
+    }
+    @media only screen and (max-width: 1000px) {
+        padding: 3rem 0 38rem 0;
+        
+    }
+    @media only screen and (max-width: 950px) {
+        margin-top: 25rem;
+        padding: 3rem 10rem 127rem 10rem;
+    }
+}
+.objective__spacing {
+    padding: 0 0 0 2rem;
+}
+
+.objective__root {
+    min-height: 360px;
+    width: 360px;
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 5px;
+    padding: 1.5rem;
+    transition: 1s;
+
+    @media only screen and (min-width: 1600px) {
+        width: 500px;
+        
+    }
+    @media only screen and (min-width: 1450px) {
+        width: 400px;
+        
+    }
+
+    @media only screen and (max-width: 1245px) {
+        height: 320px;
+        width: 320px;
+        
+    }
+
+    @media only screen and (max-width: 1065px) {
+        height: 290px;
+        width: 290px;
+        
+    }
+    @media only screen and (max-width: 950px) {
+        height: 410px;
+        width: 490px;
+        margin: 0 auto;
+    }
+
+    &__content {
+        padding: 13px;
+        border: 3px solid red;
+    }
+
+    &__img {
+        height: 210px;
+        width: 330px;
+        
+        @media only screen and (min-width: 1600px) {
+            height: 250px;
+            width: 390px;
+            
+        }
+
+        @media only screen and (min-width: 1450px) {
+            width: 360px;
+            height: 230px;
+            
+        }
+
+        @media only screen and (max-width: 1245px) {
+            height: 180px;
+            width: 300px;
+            
+        }
+        @media only screen and (max-width: 1065px) {
+            height: 150px;
+            width: 270px;
+            
+        }
+        @media only screen and (max-width: 950px) {
+            height: 35rem;
+            width: 60rem;
+        }
+    }
+    &__pic {
+        width: 330px;
+        height: 200px;
+        @media only screen and (min-width: 1600px) {
+            height: 250px;
+            width: 414px;
+            
+        }
+
+        @media only screen and (min-width: 1450px) {
+            width: 360px;
+            height: 230px;
+            
+        }
+
+        @media only screen and (max-width: 1245px) {
+            height: 180px;
+            width: 300px;
+            
+        }
+        @media only screen and (max-width: 1065px) {
+            height: 150px;
+            width: 270px;
+            
+        }
+        @media only screen and (max-width: 950px) {
+            height: 30rem;
+            width: 58rem;
+        }
+    }
+
+    &__textarea {
+        margin-top: 5px;
+
+        @media only screen and (max-width: 950px) {
+            text-align: center;
+        }
+    }
+
+    // &__title {
+
+    // }
+    &__heading {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        color: #348403;
+        font-weight: bold;
+        font-family: Roboto;
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    &__date {
+        margin-left: 5px;
+        margin-bottom: 4px;
+        color: green;
+    }
+
+    &__paragrapgh {
+        font-size:1.6rem;
+
+        @media only screen and (max-width: 1245px) {
+            font-size: 1.2rem;
+            
+        }
+    }
+}
+body.active-modal {
+    overflow-y: hidden;
+}
+
+.btn-modal {
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.modal, .overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 1000;
+}
+
+.overlay {
+    background: rgba(49,49,49,0.8);
+}
+.modal-content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background: rgba(255, 255, 255, 0.75);
+    color: #71797E;
+    padding: 14px 28px;
+    border-radius: 3px;
+    max-width: 600px;
+    min-width: 300px;
+    z-index: 1500;
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 7px;
+    cursor: pointer;
+}
+
+// form group
+.form {
+    margin-top: 1rem;
+    &__group:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+
+    &__input {
+        font-size: 1.5rem;
+        font-family: inherit;
+        color: inherit;
+        padding: 1rem 2rem;
+        border-radius: 2px;
+        background-color: rgba(#fff, .5);
+        border: none;
+        border-bottom: 3px solid transparent;
+        width: 86%;
+        // display: block;
+        transition: all .3s;
+
+        &__number {
+            width: 73%;
+        }
+
+        // @include respond(tab-port) {
+        //     width: 100%;
+        // }
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 1rem 2rem rgba(#000, .1);
+            border-bottom: 3px solid green;
+        }
+
+        &:focus:invalid {
+            border-bottom: 3px solid #ddd;
+        }
+
+        &::-webkit-input-placeholder {
+            color: #ddd;
+        }
+    }
+
+
+    &__label {
+        font-size: 1.2rem;
+        font-weight: 700;
+        // margin-left: 2rem;
+        margin-right: 1rem;
+        margin-top: .7rem;
+        // display: block;
+        transition: all .3s;
+    }
+
+    &__input:placeholder-shown + &__label {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-4rem);
+    }
+
+
+    &__radio-group {
+        width: 33%;
+        display: inline-block;
+
+        // @include respond(tab-port) {
+        //     width: 100%;
+        //     margin-bottom: 2rem;
+        // }
+    }
+
+    &__radio-input {
+        display: none;
+    }
+    
+    &__radio-label {
+        font-size: 1.4rem;
+        cursor: pointer;
+        position: relative;
+        padding-left: 4.5rem;
+    }
+
+    &__radio-button {
+        height: 2rem;
+        width: 2rem;
+        border: 5px solid green;
+        border-radius: 50%;
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        top: -.4rem;
+
+        &::after {
+            content: "";
+            display: block;
+            height: 1.3rem;
+            width: 1.3rem;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: green;
+            opacity: 0;
+            transition: opacity .2s;
+        }
+    }
+
+    &__radio-input:checked ~ &__radio-label &__radio-button::after {
+        opacity: 1;
+    }
+}

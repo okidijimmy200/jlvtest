@@ -1,0 +1,134 @@
+.section-about {
+    position: relative;
+    background-color: #fff;
+    padding:15rem 20rem 0 20rem;
+    // to move the section above to cover the triangular space
+    // margin-top: -15vh;
+    // z-index: -99;
+}
+
+.feature-box {
+    position: relative;
+    background-color: #fff;
+    font-size: 1.2rem;
+    padding: .1rem;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 1.5rem 4rem rgba(#000, .15);
+    cursor: pointer;
+    // to perform transition
+    transition: all .3s; 
+    z-index: 99;
+
+    &__position {
+        margin-top: -23rem;
+    }
+
+    // styling the icon
+    &__icon {
+        height: 10rem;
+        width: 10rem;
+        margin-bottom: .5rem;
+        margin-top: 2rem;
+    }
+    // perfroming the hover effect
+    &:hover {
+        transform: scale(1.05) translateY(-.5rem);
+    }
+    // styling the text
+    &__text {
+
+    }
+}
+
+.wraper {
+    padding: 50px;
+    text-align: center;
+    font-family: sans-serif;
+    width: 638px;
+    margin: 10px auto;
+    color: #348403;
+  }
+  
+  h1 {
+    margin: 50px auto;
+  }
+  
+  .container {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
+  }
+  .link__2{
+    margin-right: -2rem;
+  }
+  .link {
+    position: relative;
+    margin-top: 10px;
+    width: 100%;
+
+  }
+  
+  .link a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #348403;
+    font-size: 15px;
+  }
+  
+  .link:first-child {
+    margin-left: -130px;
+  }
+  
+  .link:last-child {
+    margin-right: -130px;
+  }
+  
+  .link::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    position: absolute;
+    border-radius: 10px;
+    top: -18px;
+    left: 50%;
+    transform: translatex(-50%);
+    border: 2px solid #348403;
+  }
+  
+  .active::after,
+  .link:hover::after {
+    background: #348403
+  }
+  
+  p.lead {
+    font-weight: 600;
+    margin: 50px auto;
+    line-height: 1.5;
+  }
+
+  .text {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+
+    &__box {
+        background-color: #fff;
+        width: 15rem;
+        height: auto;
+        font-size: 1.4rem;
+    }
+    &__paragraph1 {
+        margin-left: -7rem;
+    }
+
+    &__paragraph2 {
+        margin-right: -6rem;
+    }
+  }
+
+  

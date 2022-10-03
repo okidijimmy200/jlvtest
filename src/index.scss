@@ -1,0 +1,189 @@
+// contains the base styles like body and * selector
+
+/* universal selector */
+
+*,
+*::after,
+*::before {
+    /* update universal reset */
+    
+    margin: 0px;
+    padding: 0px;
+    /* box-sizing changes the box models so tht the borders and paddings are not added to total width and height*/
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;  /* line hieght of 1.7 is 1.7 of default line height */
+    color:#777;
+    /* padding to create white space around web page */
+    padding: 3rem;
+    box-sizing:border-box;
+
+    @media only screen and (min-width: 1500px) {
+        padding: 4rem;
+    }
+
+    @media only screen and (max-width: 1000px) {
+        padding: 0;
+    }
+}
+
+/* rooy font size */
+html {
+    font-size: 62.5%;
+
+    @media only screen and (min-width: 1400px) {
+        font-size: 75%;
+        
+    }
+
+    @media only screen and (max-width: 1200px) {
+        font-size: 56.5%;
+        
+    }
+    @media only screen and (max-width: 1000px) {
+        font-size: 50%;
+        
+    }
+}
+
+// we start with a row
+// we define the width of a row
+.row {
+    // standard dimension
+    max-width:114rem;
+    margin: 0 auto;    
+    &:not(:last-child) {
+        margin-bottom: 8rem;
+    }
+
+    @media only screen and (max-width: 1195px) {
+        &:not(:last-child) {
+            // creating space btn margins
+            margin-bottom: 6rem;
+        }
+        
+    }
+    @media only screen and (max-width: 1141px) {
+        &:not(:last-child) {
+            // creating space btn margins
+            margin-bottom: 4rem;
+        }
+        
+    }
+
+
+    clearfix {
+        &::after {
+            content: "";
+            display:table;
+            clear:both;
+    
+        }
+    }
+    // working on the columns
+    // we are going to use the attributes selector
+    [class^="col-"] {       
+        // we  need to float the columns to the left
+        float:left;
+        &:not(:last-child) {
+            margin-right:4rem;
+        }
+
+        @media only screen and (max-width: 1195px) {
+            &:not(:last-child) {
+                // creating space btn margins
+                margin-right:3rem;
+                
+            }
+            
+        }
+       
+        @media only screen and (max-width: 950px) {
+            width: 100% !important;
+            margin-bottom: 2rem;
+            margin-right: 0;
+        }
+    }
+    @media only screen and (max-width: 950px) {
+        width: 100% !important;
+    }
+    .col-1-of-2 {
+        width: calc((100% - #{4rem}) / 2);
+      
+        
+    }
+    .col-1-of-3 {
+        width: calc((100% - 2 * #{4rem}) / 3);
+    }
+    // here we multiply two times thw width of 1-of-3 column plus gutter width
+    .col-2-of-3 {
+        width:calc(2 * ((100% - 2 * #{4rem}) / 3) + #{4rem});
+    }
+    .col-1-of-4 {
+        width: calc((100% - 3 * #{4rem}) / 4);
+
+    }
+
+    .col-2-of-4{
+        width:calc(2 * ((100% - 3 * #{4rem}) / 4) + #{4rem});
+    }
+    // grid display of 3 of 4
+    .col-3-of-4 {
+        width:calc(3 *((100% - 3 * #{4rem}) / 4) + 2*#{4rem} )
+    }
+    
+}
+
+.u-center-text {
+    text-align: center;
+}
+
+.u-margin-bottom-small {
+    margin-bottom: 1.3rem;
+    @media only screen and (max-width: 1245px) {
+        margin-bottom: 1rem;
+        
+    }
+}
+.u-margin-bottom-medium {
+    margin-bottom: 4rem;
+}
+
+.u-margin-bottom-big { 
+    margin-bottom: 8rem;
+}
+
+.u-margin-top-big { 
+    margin-top: 8rem;
+}
+
+
+
+
+
+
+
+
+
+
+$color-primary:#7ed56f;
+$color-primary-light: #0ba73f;
+$color-primary-dark:#28b485;
+$color-gray-dark:#777;
+
+$color-secondary-light:#ffb900;
+$color-secondary-dark:#ff7730;
+
+$color-tetiary-light:#2998ff;
+$color-tetiary-dark:#5643fa;
+
+// additional colors
+$color-black:#000;
+$color-grey-light-1:#f7f7f7;
+$color-grey-light-2:#eee;
+$color-white:#fff;

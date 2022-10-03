@@ -1,0 +1,62 @@
+// header section
+
+/* formatting the header element */
+.header-about {    
+    height: 90vh; /* vh meaning viewport Height so 95 of default view height of the screen */   
+    background-image:linear-gradient(
+        to left bottom,
+        rgba(#225901, 100),
+        rgba(#04220700, 0.3)), 
+        url(../../../images/bg-about.jpeg);   
+    background-size: cover;  /* background cover takes over the width of view port */   
+    background-position: top; 
+
+    // nesting the elements
+    /* styling the logo */
+    &__section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 90vh;
+        padding: 0 3rem;
+    }
+
+    &__logo-box-about {
+        /* use absolute positioning */
+        position: absolute;
+        top:4rem;
+        left:4rem;
+        margin-bottom: 20rem;
+        /* we need to have a refrence to count 40px top and left from. we get it from header, so the header part is placed to position relative to logo-box */
+    }
+
+    &__logo-about {
+        height:3.5rem;
+    }
+
+    &__detail {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+        
+
+        &__paragraph {
+            flex: 0 0 55%;
+            margin-right: 2rem;
+            color: #fff;
+            @media only screen and (min-width: 1459px) {
+                flex: 0 0 60%;
+            }
+            @media only screen and (min-width: 1647px) {
+                flex: 0 0 65%;
+            }
+        }
+
+        &__picture {
+            flex: 1;
+            background-image: url(../../../images/about-pic.png);
+        }
+
+    }
+
+}
