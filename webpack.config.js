@@ -1,6 +1,6 @@
 const path = require('path')
 module.exports = {
-  entry: './src/Index.tsx', // Changed the entry file name
+  entry: './src/index.tsx', // Changed the entry file name
   output: {
     path: path.resolve(__dirname, './dist'),
     filename: 'bundle.js'
