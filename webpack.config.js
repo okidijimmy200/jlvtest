@@ -1,3 +1,4 @@
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path')
 module.exports = {
   entry: './src/index.tsx', // Changed the entry file name
@@ -8,7 +9,8 @@ module.exports = {
   devServer: {
     static: {       
       directory: path.resolve(__dirname, './dist')
-    }
+    },
+    historyApiFallback: true
   },
   module: {
     rules: [
@@ -39,4 +41,9 @@ module.exports = {
   resolve: {
     extensions: ['.tsx', '.ts', '.jsx', '.js'],
   },
+  plugins: [new HtmlWebpackPlugin({
+    filename: "index.html",
+    template: "./dist/index.html",
+    favicon: "./dist/LogoFav.ico"
+  })],
 }
