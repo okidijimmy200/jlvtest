@@ -44,6 +44,7 @@ module.exports = {
   plugins: [new HtmlWebpackPlugin({
     filename: "index.html",
     template: "./dist/index.html",
-    favicon: "./dist/LogoFav.ico"
+    favicon: "./dist/LogoFav.ico",
+    title: 'Production',
   })],
 }
