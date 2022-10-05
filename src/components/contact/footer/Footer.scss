@@ -6,9 +6,9 @@
 .FooterContact {
 
     &__part1 {
-        padding: 10rem;
-        @media only screen and (min-width: 1277px) {
-            padding: 6rem 10rem 2rem 10rem;
+        padding: 4rem;
+        @media only screen and (max-width: 1277px) {
+            padding: 8rem;
         }
     }
 
