@@ -48,7 +48,8 @@
     //     justify-content: baseline;
     // }
     &__map {
-        position: relative;
+        display: flex;
+        flex-direction: column;
         &--pic {
             border: 2px solid  #E5E5E5;
             height: 357px;
@@ -76,11 +77,12 @@
                 height: 250px;
             }
             @media only screen and (min-width: 1500px) {
-                width: 700px;
+                // margin-top: 208px;
+                width: 750px;
             }
-            @media only screen and (min-width: 1365px) {
-                margin-top: 203px;
-                width: 660px;
+            @media only screen and (max-width: 1500px) {
+                // margin-top: 203px;
+                width: 580px;
             }
         }
 

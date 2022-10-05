@@ -17,6 +17,11 @@
         width: 80%;
         margin: 0 auto;
 
+        @media only screen and (max-width: 1200px) {
+            // padding: 0 2rem;
+            width: 90%;
+        }
+
     }
     &__text {
         font-weight: 400;
@@ -77,11 +82,15 @@
         border-radius: 50%;
     }
     &__box-1 {
-        height: 17rem;
 
         &-heading {
             width: 13rem;
             margin: 0 auto;
+
+            @media only screen and (max-width: 1200px) {
+                // padding: 0 2rem;
+                width: 16rem;
+            }
         }
     }
 }
