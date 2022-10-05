@@ -68,10 +68,10 @@ export default function Contact() {
           <div className='contact'>
             <div className='contact__map'>
               <div className='contact__map--pic'>
-                {loading ? (<div style={width > 1500 ? {height: '595px', width: '700px', border: 0, backgroundColor: '#f7f7f7'} : width > 1366 ? {height: '600px', width: '660px', border: 0, backgroundColor: '#f7f7f7'} : {height: '355px', width: '576px', border: 0, backgroundColor: '#f7f7f7'} }><ClipLoader loading={loading} cssOverride={override} /></div>) : null}
+                {loading ? (<div style={width > 1700 ? {height: '595px', width: '900px', border: 0, backgroundColor: '#f7f7f7'} : width > 1500 ? {height: '595px', width: '700px', border: 0, backgroundColor: '#f7f7f7'} : width > 1366 ? {height: '600px', width: '660px', border: 0, backgroundColor: '#f7f7f7'} : {height: '355px', width: '576px', border: 0, backgroundColor: '#f7f7f7'} }><ClipLoader loading={loading} cssOverride={override} /></div>) : null}
                 
                 {/* eslint-disable-next-lin */}
-              <iframe onLoad={hideSpinner} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d97036.39301872354!2d30.650395759030722!3d-0.40402990054766247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19d8e59d48de3e3d%3A0x23701798f3d52ad!2sJLV%20MIXED%20FARM!5e0!3m2!1sen!2sug!4v1664537539996!5m2!1sen!2sug"  style={width > 1500 ? {height: '595px', width: '700px', border: 0} : width > 1366 ? {height: '600px', width: '660px', border: 0} : {height: '355px', width: '576px', border: 0} } title="myFrame"></iframe>
+              <iframe onLoad={hideSpinner} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d97036.39301872354!2d30.650395759030722!3d-0.40402990054766247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19d8e59d48de3e3d%3A0x23701798f3d52ad!2sJLV%20MIXED%20FARM!5e0!3m2!1sen!2sug!4v1664537539996!5m2!1sen!2sug"  style={ width > 1700 ? {height: '595px', width: '900px', border: 0} : width > 1500 ? {height: '595px', width: '700px', border: 0} : width > 1366 ? {height: '600px', width: '660px', border: 0} : {height: '355px', width: '576px', border: 0} } title="myFrame"></iframe>
               </div>
               <div className='contact__map--detail'>
                 <div className='heading-tetiary heading--title'>

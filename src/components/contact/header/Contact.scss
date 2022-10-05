@@ -71,8 +71,12 @@
             padding: 2rem 4rem;
             border-bottom-left-radius: 10px;
             border-bottom-right-radius: 10px;
+            @media only screen and (min-width: 1700px) {
+                width: 900px !important;
+                height: 250px;
+            }
             @media only screen and (min-width: 1500px) {
-                width: 700px !important;
+                width: 700px;
             }
             @media only screen and (min-width: 1365px) {
                 margin-top: 203px;

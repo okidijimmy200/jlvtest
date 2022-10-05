@@ -41,6 +41,10 @@ const useStyles = makeStyles(theme => ({
     submit: {
       marginRight: 15,
       marginBottom: 16,
+      [theme.breakpoints.up(1700)]: {
+        marginRight: 23,
+        marginBottom: 24,              // secondary
+      },
       backgroundColor: '#225901',
       '&:hover': {
         backgroundColor: '#225901'
