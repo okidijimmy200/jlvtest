@@ -11,6 +11,10 @@
     background-size: cover;  /* background cover takes over the width of view port */   
     background-position: top; 
 
+    @media only screen and (max-width: 900px) {
+        height: 82vh;
+        
+    }
     // nesting the elements
     /* styling the logo */
     &__section {
@@ -19,6 +23,10 @@
         justify-content: space-between;
         height: 90vh;
         padding: 0 3rem;
+        @media only screen and (max-width: 900px) {
+            height: 82vh;
+            
+        }
     }
 
     &__logo-box-about {
@@ -36,6 +44,7 @@
 
     &__detail {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         margin-bottom: 2rem;
         
@@ -50,13 +59,37 @@
             @media only screen and (min-width: 1647px) {
                 flex: 0 0 65%;
             }
+            @media only screen and (max-width: 500px) {
+                min-width: 40rem;
+            }
         }
 
-        &__picture {
-            flex: 1;
-            background-image: url(../../../images/about-pic.png);
-        }
+
 
     }
 
 }
+.header-about__detail__paragraph {
+    color: #fff;
+}
+
+.header-about__detail__picture {
+    background-image: url(../../../images/about-pic.png);
+    z-index: 9999;
+    height: 30rem;
+    width: auto;
+    background-size: cover;  /* background cover takes over the width of view port */   
+    background-position: top;
+
+    // @media only screen and (min-width: 1200px) {
+    //     height: 35rem;
+    //     width: 60rem;
+    //     background-size: cover;  /* background cover takes over the width of view port */   
+    //     background-position: top;
+    // }
+}
+
+// &__picture {
+//     flex: 1;
+//     background-image: url(../../../images/about-pic.png);
+// }

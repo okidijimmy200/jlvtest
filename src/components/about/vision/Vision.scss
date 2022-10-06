@@ -48,6 +48,12 @@
             height: 30rem;
             width: auto;
         }
+        @media only screen and (max-width: 900px) {
+            height: 35rem;
+            width: auto;
+            margin: 0 auto;
+            
+        }
 
         &--2 {
             background-image: url(../../../images/player.png);
@@ -90,6 +96,11 @@
             @media only screen and (max-width: 1200px) {
                 // padding: 0 2rem;
                 width: 16rem;
+            }
+            @media only screen and (max-width: 900px) {
+                width: 18rem;
+                text-align: center;
+                
             }
         }
     }

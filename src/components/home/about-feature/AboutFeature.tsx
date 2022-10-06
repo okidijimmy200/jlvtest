@@ -25,7 +25,7 @@ export default function AboutFeature({farm, diary, resort, onclick, diaryHandler
                             <div ><img src={Farm1} alt="farm-3" className="composition__photo composition__photo--p3"/></div>
            
                         </div>
-                        part 1
+                       .
                     </div>
                     <div className='col-1-of-2'>
                     {farm && !diary && !resort && 

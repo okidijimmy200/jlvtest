@@ -10,6 +10,14 @@
         url(~../../../images/Bg.jpg);   
     background-size: cover;  /* background cover takes over the width of view port */   
     background-position: top; 
+    @media only screen and (max-width: 800px) {
+        height: 30vh;
+        
+    }
+    @media only screen and (max-width: 500px) {
+        height: 40vh;
+        
+    }
 
     // nesting the elements
     /* styling the logo */
@@ -44,6 +52,17 @@
         transform: translate(-50%, -50%);
         /* aligning the btn to center  */
         text-align: center;
+
+        @media only screen and (max-width: 800px) {
+            top: 12%;
+            
+        }
+
+        @media only screen and (max-width: 500px) {
+            top: 20%;
+            left: 50%;
+            
+        }
     }
 }
 
@@ -62,6 +81,11 @@
         animation-name: moveInLeft;
         animation-duration: 1s;
         animation-timing-function: ease-out;   
+        @media only screen and (max-width: 500px) {
+            font-size: 2.5rem;
+            font-weight: 600;
+            
+        }
     
     }
     &--sub {
@@ -80,6 +104,11 @@
     // making the h2 text green
     display: inline-block;    
     letter-spacing: .2rem;
+    @media only screen and (max-width: 500px) {
+        font-size: 2.5rem;
+        font-weight: 600;
+        
+    }
 }
 .heading-tetiary {
     font-size: 1.6rem;

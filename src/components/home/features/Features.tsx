@@ -48,7 +48,13 @@ export default function Features({onclick, diaryHandler, resortHandler}: ChildPr
                     </div>
 
                     </div>
-                    <div className="wraper">
+                    </div>
+                    
+
+            </section>
+            <section className='section-wrapper'>
+                <div className='row'>
+                <div className="wraper">
   <h1 className='heading-secondary heading-title'>Why Choose Us?</h1>
 
 <div className='text'>
@@ -65,7 +71,6 @@ export default function Features({onclick, diaryHandler, resortHandler}: ChildPr
 
  
 </div>
-
                 </div>
             </section>
     </>

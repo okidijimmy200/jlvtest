@@ -7,8 +7,9 @@ export default function Header() {
     <header className="header-about">
       <div className='header-about__section'>
         <Nav />
-      <div className='header-about__detail'>
-        <div className='header-about__detail__paragraph'>
+        <div className='row'>
+          <div className='col-1-of-2'>
+          <div className='header-about__detail__paragraph'>
           <div><h2>Who are we?</h2></div>
         <p className="paragraph" style={{fontWeight: 800}}>
         Nestled in the gently sloping hills of Rubaya, Kashari, Mbarara district, lies JLV Mixed farm: A
@@ -22,11 +23,19 @@ export default function Header() {
         current projects of value addition.
             </p>
         </div>
-        <div className='header-about__detail__picture'>
-          {/* <h2></h2> */}
+          </div>
+          <div className='col-1-of-2'>
+          <div className='header-about__detail__picture'>
+          <h2>te</h2>
         </div>
+          </div>
+        </div>
+      {/* <div className='header-about__detail'> */}
 
-      </div>
+        {/* <div className='header-about__detail__picture'>
+        </div> */}
+
+      {/* </div> */}
       </div>
 
     

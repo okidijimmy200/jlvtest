@@ -6,9 +6,19 @@
 
 .grid-container{
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 20rem);
     padding: 10px;
+    @media only screen and (max-width: 900px) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 20rem);
+        
+    }
+    @media only screen and (max-width: 500px) {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(8, 20rem);
+        
+    }
 }
 
 .grid-item {

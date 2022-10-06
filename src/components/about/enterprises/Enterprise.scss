@@ -42,6 +42,11 @@
         height: 44rem;
         width: 75rem;
     }
+    @media only screen and (max-width: 500px) {
+        height: 44rem;
+        width: 40rem;
+        
+    }
 
     &__pic {
         border-top-right-radius: 1rem;
@@ -66,6 +71,12 @@
             height: 35rem;
             width: 70rem;
         }
+        @media only screen and (max-width: 500px) {
+            height: 44rem;
+            width: 35rem;
+            
+        }
+    
     
     }
 
@@ -89,6 +100,12 @@
             height: 35rem;
             width: 70rem;
         }
+
+        @media only screen and (max-width: 500px) {
+            height: 31rem;
+            width: 35rem;
+            
+        }
     }
 
     &__textarea {
@@ -98,6 +115,12 @@
         line-height: 17.58px;
         color:#285A84;
         font-family: Roboto;
+
+        
+        @media only screen and (max-width: 500px) {
+            margin-top: -78px;
+            
+        }
     }
 
     &__title {

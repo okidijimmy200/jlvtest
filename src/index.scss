@@ -76,6 +76,10 @@ html {
         
     }
 
+    @media only screen and (max-width: 500px) {
+        width: 40rem;
+    }
+
 
     clearfix {
         &::after {
@@ -108,10 +112,13 @@ html {
             margin-bottom: 2rem;
             margin-right: 0;
         }
+        @media only screen and (max-width: 500px) {
+            margin-bottom: 2rem;
+        }
     }
-    @media only screen and (max-width: 950px) {
-        width: 100% !important;
-    }
+    // @media only screen and (max-width: 950px) {
+    //     width: 100% !important;
+    // }
     .col-1-of-2 {
         width: calc((100% - #{4rem}) / 2);
       

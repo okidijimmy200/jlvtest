@@ -15,13 +15,22 @@
         margin-top: 25rem;
         padding: 3rem 10rem 127rem 10rem;
     }
+
+    @media only screen and (max-width: 500px) {
+        padding:5rem 0rem 127rem 0rem;
+        
+    }
+    //   @media only screen and (max-width: 400px) {
+    //     padding:0rem 1rem 4rem 1rem;
+        
+    // }
 }
 .objective__spacing {
     padding: 0 0 0 2rem;
 }
 
 .objective__root {
-    min-height: 360px;
+    height: 360px;
     width: 360px;
     background: rgba(255, 255, 255, 0.75);
     border-radius: 5px;
@@ -52,6 +61,11 @@
         height: 410px;
         width: 490px;
         margin: 0 auto;
+    }
+    @media only screen and (max-width: 500px) {
+        height: 320px;
+        width: 320px;
+        
     }
 
     &__content {
@@ -89,6 +103,11 @@
             height: 35rem;
             width: 60rem;
         }
+        @media only screen and (max-width: 500px) {
+            height: 160px;
+            width: 270px;
+            
+        }
     }
     &__pic {
         width: 330px;
@@ -118,6 +137,11 @@
         @media only screen and (max-width: 950px) {
             height: 30rem;
             width: 58rem;
+        }
+        @media only screen and (max-width: 500px) {
+            height: 150px;
+            width: 295px;
+            
         }
     }
 

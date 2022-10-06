@@ -5,6 +5,34 @@
     // to move the section above to cover the triangular space
     // margin-top: -15vh;
     // z-index: -99;
+    @media only screen and (max-width: 900px) {
+      padding:5rem 20rem 0 20rem;
+      
+  }
+
+  @media only screen and (max-width: 500px) {
+    padding:5rem 4rem 60rem 4rem;
+    
+}
+  @media only screen and (max-width: 400px) {
+    padding:5rem 1rem 60rem 1rem;
+    
+}
+}
+
+.section-wrapper {
+  position: relative;
+  background-color: #fff; 
+  padding:10rem 20rem 0 20rem;
+
+  @media only screen and (max-width: 500px) {
+    padding:0rem 4rem 4rem 4rem;
+    
+}
+  @media only screen and (max-width: 400px) {
+    padding:0rem 1rem 4rem 1rem;
+    
+}
 }
 
 .feature-box {
@@ -16,12 +44,22 @@
     border-radius: 1rem;
     box-shadow: 0 1.5rem 4rem rgba(#000, .15);
     cursor: pointer;
+    margin-top: -19rem;
     // to perform transition
     transition: all .3s; 
     z-index: 99;
+    @media only screen and (max-width: 900px) {
+      margin-top: 0rem;
+      
+  }
+
+    @media only screen and (max-width: 500px) {
+      padding: 2rem;
+      
+  }
 
     &__position {
-        margin-top: -23rem;
+        // margin-top: -23rem;
     }
 
     // styling the icon
@@ -30,6 +68,14 @@
         width: 10rem;
         margin-bottom: .5rem;
         margin-top: 2rem;
+
+        @media only screen and (max-width: 500px) {
+          height: 7rem;
+          width: 7rem;
+          margin-bottom: .3rem;
+          margin-top: 1rem;
+          
+      }
     }
     // perfroming the hover effect
     &:hover {
@@ -42,12 +88,22 @@
 }
 
 .wraper {
-    padding: 50px;
+    padding: 10px 50px 50px 50px;
     text-align: center;
     font-family: sans-serif;
     width: 638px;
     margin: 10px auto;
     color: #348403;
+
+    @media only screen and (max-width: 500px) {
+      padding:10px;
+      width: 302px;
+      
+  }
+  //   @media only screen and (max-width: 400px) {
+  //     padding:10px 50px 50px 50px;
+      
+  // }
   }
   
   h1 {
