@@ -13,7 +13,7 @@ export default function Enterprise() {
         <h2>Our Enterprises</h2>
       </div>
       <div>
-        <div className='row'>
+        <div className='row row_1'>
           <div className='col-1-of-3'>
             <div className='enterprise'>
               <div className='enterprise__pic'>

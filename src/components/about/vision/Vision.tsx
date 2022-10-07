@@ -9,7 +9,7 @@ export default function Vision() {
   return (
     <section className='section-vision'>
         <div className='vision'>
-        <div className='row'>
+        <div className='row row_2'>
             <div className='col-1-of-2'>
                 <div className='vision__statement'>
                   <div className='vision__box'>

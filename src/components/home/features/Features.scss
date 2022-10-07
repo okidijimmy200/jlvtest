@@ -97,7 +97,7 @@
 
     @media only screen and (max-width: 500px) {
       padding:10px;
-      width: 302px;
+      width: 228px;
       
   }
   //   @media only screen and (max-width: 400px) {
@@ -137,10 +137,20 @@
   
   .link:first-child {
     margin-left: -130px;
+
+    @media only screen and (max-width: 500px) {
+      margin-left: -50px;
+      
+  }
   }
   
   .link:last-child {
     margin-right: -130px;
+
+    @media only screen and (max-width: 500px) {
+      margin-right: -50px;
+      
+  }
   }
   
   .link::after {

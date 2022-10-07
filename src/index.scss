@@ -79,6 +79,18 @@ html {
     @media only screen and (max-width: 500px) {
         width: 40rem;
     }
+    &_1 {
+        @media only screen and (max-width: 400px) {
+            width: 38rem;
+            margin-left: -3.5rem;
+        }
+    }
+    &_2 {
+        @media only screen and (max-width: 400px) {
+            width: 38rem;
+        }
+    }
+
 
 
     clearfix {

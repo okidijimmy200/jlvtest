@@ -67,6 +67,7 @@ export default function Action() {
         </div>
       )}</div>
                   </div>
+                  </div>
 
               </div>
               <div className="grid-item-action">
@@ -194,6 +195,6 @@ export default function Action() {
                   </div>
               </div>
 </div>
-    </div>
+    
   )
 }

@@ -13,7 +13,7 @@ import Logo from '../../../images/Logo.png'
 
 const useStyles = makeStyles(theme => ({
     card: {
-      maxwidth: 600,
+      width: 600,
       margin: 'auto',
       textAlign: 'center',
       marginTop: 40,
@@ -24,6 +24,12 @@ const useStyles = makeStyles(theme => ({
       },
       [theme.breakpoints.up(1300)]: {
         width: 500                  // secondary
+      },
+      [theme.breakpoints.up(500)]: {
+        width: 450                  // secondary
+      },
+      [theme.breakpoints.up(350)]: {
+        width: 300                  // secondary
       }
     },
     error: {
@@ -36,7 +42,10 @@ const useStyles = makeStyles(theme => ({
     textField: {
       marginLeft: 8,
       marginRight: 8,
-      width: 300
+      width: 300,
+      [theme.breakpoints.up(350)]: {
+        width: 200                  // secondary
+      }
     },
     submit: {
       marginRight: 15,

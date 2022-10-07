@@ -253,4 +253,8 @@
     margin-top: -2rem;
     background-color: #225901;
     transition: all 2s ease-in-out;
+    @media only screen and (max-width: 400px) {
+        margin-top: -3rem;
+        
+    }
 }

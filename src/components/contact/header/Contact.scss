@@ -18,6 +18,10 @@
         height: 124vh; 
         
     }
+    @media only screen and (max-width: 400px) {
+        height: 134vh; 
+        
+    }
 
     // nesting the elements
     /* styling the logo */
@@ -66,11 +70,11 @@
             }
             @media only screen and (max-width: 500px) {
                 height: 355px;
-                width: 496px;
+                width:330px;
             }
-            @media only screen and (max-width: 500px) {
-                height: 355px;
-                width: 350px;
+            @media only screen and (max-width: 400px) {
+                height: 290px;
+                width: 290px;
             }
         }
 
@@ -98,7 +102,12 @@
             }
             @media only screen and (max-width: 500px) {
                 height: 180px;
-                width: 350px;
+                width: 330px;
+            }
+
+            @media only screen and (max-width: 400px) {
+                height: 180px;
+                width: 290px;
             }
         }
 
