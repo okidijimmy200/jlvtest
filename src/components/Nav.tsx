@@ -1,10 +1,12 @@
 import React, {useState} from 'react'
 import { NavLink, Link } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link';
+import { BiMenuAltRight } from 'react-icons/bi';
 
 import  Logo from '../images/Logo.png'
 export default function Nav() {
         const [hovered, setHovered] = useState(false);
+        const [isOpen, setIsOpen] = useState(false)
 
         const onMouseEnter = (e: any) => {
                 setHovered(true);
@@ -14,6 +16,10 @@ export default function Nav() {
                 setHovered(false);
               };
         const style = hovered ? { color: "#fff", borderBottom: 'none' } : {};
+
+        const handleClick=() => {
+                setIsOpen(!isOpen)
+        }
             
   return (
     <>
@@ -36,7 +42,21 @@ export default function Nav() {
                 </ul>
 
                 </div>
+                <div className='nav-mobile'>
+                        <div onClick={handleClick}><BiMenuAltRight style={{height: '30px', width: '30px', color: '#fff', cursor: 'pointer'}} /></div>
                 </div>
+                </div>
+                {isOpen && 
+                <div className='header--mobile'>
+                        <ul className='nav-mobile__bar'>
+                                        <li className="nav-mobile__item"><NavLink className='nav-mobile__item__link'  to='/' end>Home</NavLink></li>
+                                        <li className="nav-mobile__item"><NavLink className='nav-mobile__item__link'  to='/about'>About</NavLink></li>
+                                        <li className="nav-mobile__item"><HashLink smooth to='/#services'  className='nav-mobile__item__link' >Services</HashLink></li>
+                                        <li className="nav-mobile__item"><NavLink className='nav-mobile__item__link'  to='/contact'>Contact Us</NavLink></li>
+                                </ul>
+                </div>
+                }
+
     </>
   )
 }

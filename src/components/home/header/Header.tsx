@@ -1,4 +1,6 @@
 import React from 'react'
+import { NavLink, Link } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link';
 import Nav from '../../Nav'
 import './Header.scss'
 

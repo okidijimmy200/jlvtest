@@ -14,6 +14,10 @@
     @media only screen and (max-width: 1065px) {
         height: 260vh; 
     }
+    @media only screen and (max-width: 500px) {
+        height: 124vh; 
+        
+    }
 
     // nesting the elements
     /* styling the logo */
@@ -60,6 +64,14 @@
                 height: 390px;
                 width: 620px;
             }
+            @media only screen and (max-width: 500px) {
+                height: 355px;
+                width: 496px;
+            }
+            @media only screen and (max-width: 500px) {
+                height: 355px;
+                width: 350px;
+            }
         }
 
         &--detail {
@@ -83,6 +95,10 @@
             @media only screen and (max-width: 1500px) {
                 // margin-top: 203px;
                 width: 580px;
+            }
+            @media only screen and (max-width: 500px) {
+                height: 180px;
+                width: 350px;
             }
         }
 

@@ -142,6 +142,10 @@
         &__list {
             list-style: none;
             display: flex;
+
+            @media only screen and (max-width: 500px) {
+                display: none;
+            }
         }
 
         &__item  {
@@ -212,4 +216,41 @@
 
 .heading-title {
     color: #348403 !important;
+}
+
+.nav-mobile {
+    @media only screen and (min-width: 500px) {
+        display: none;
+        
+    }
+    background-color: #225901;
+    &__bar {
+        // position: fixed;
+        list-style: none;
+        
+    }
+
+    &__item {
+        
+        font-size: 1.5rem;
+        font-weight: 600;
+        &:not(:last-child) {
+                margin-bottom: 1rem;
+        }
+
+        &__link {
+            text-decoration: none;
+            color: #fff;
+        }
+    }
+}
+
+.header--mobile {
+    @media only screen and (min-width: 500px) {
+        display: none;
+        
+    }
+    margin-top: -2rem;
+    background-color: #225901;
+    transition: all 2s ease-in-out;
 }
