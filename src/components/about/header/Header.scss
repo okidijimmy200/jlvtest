@@ -88,6 +88,10 @@
     width: auto;
     background-size: cover;  /* background cover takes over the width of view port */   
     background-position: top;
+    @media only screen and (max-width: 400px) {
+        height: 20rem;
+        
+    }
 
     // @media only screen and (min-width: 1200px) {
     //     height: 35rem;
