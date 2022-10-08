@@ -10,8 +10,12 @@
         url(~../../../images/Bg.jpg);   
     background-size: cover;  /* background cover takes over the width of view port */   
     background-position: top; 
-    @media only screen and (max-width: 800px) {
+    @media only screen and (max-width: 800px)  and (max-height: 1280px)  {
         height: 30vh;
+        
+    }
+    @media only screen and (max-width: 800px)  and (max-height: 360px)  {
+        height: 60vh;
         
     }
     @media only screen and (max-width: 500px) {
@@ -53,8 +57,12 @@
         /* aligning the btn to center  */
         text-align: center;
 
-        @media only screen and (max-width: 800px) {
+        @media only screen and (max-width: 800px) and (max-height: 1280px) {
             top: 12%;
+            
+        }
+        @media only screen and (max-width: 800px)  and (max-height: 360px)  {
+            top: 30%;
             
         }
 

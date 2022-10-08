@@ -14,6 +14,10 @@
 
 .composition {
     position: relative;
+    @media only screen and (max-width: 800px) {
+       margin-left: 2rem;
+        
+    }
 
     &__photo {
         width: 55%;
@@ -27,9 +31,17 @@
         @media only screen and (max-width: 950px) {
             float: left;
             position: relative;
-            width: 33.33333333%;
+            width: 32.33333333%;
             box-shadow: 0 1.5rem 3rem rgba(#000, .2);
         }
+        @media only screen and (max-width: 800px) {
+            width: 32.33333333%;
+            
+        }
+        // @media only screen and (min-width: 600px) {
+        //     width: 31.33333333%;
+            
+        // }
 
         &--p1 {
             left: 0;

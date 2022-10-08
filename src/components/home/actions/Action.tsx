@@ -68,9 +68,7 @@ export default function Action() {
       )}</div>
                   </div>
                   </div>
-
-              </div>
-              <div className="grid-item-action">
+                  <div className="grid-item-action">
               <div className='grid-item-action__icon'>
                   <MdNaturePeople fontSize='5rem'/></div>
                   <div className='grid-item-action__heading heading-tetiary u-margin-bottom-small'>
@@ -99,6 +97,10 @@ export default function Action() {
                     </div>
                   </div>
               </div>
+                  
+
+              
+
               <div className="grid-item-action">
               <div className='grid-item-action__icon'>
                   <GiCow fontSize='5rem'/></div>
@@ -193,6 +195,7 @@ export default function Action() {
       )}
                   </div>
                   </div>
+              </div>
               </div>
 </div>
     
