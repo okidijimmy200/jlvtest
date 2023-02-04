@@ -3,12 +3,12 @@ const path = require('path')
 module.exports = {
   entry: './src/index.tsx', // Changed the entry file name
   output: {
-    path: path.resolve(__dirname, './dist'),
+    path: path.resolve(__dirname, './build'),
     filename: 'bundle.js'
   },
   devServer: {
     static: {       
-      directory: path.resolve(__dirname, './dist')
+      directory: path.resolve(__dirname, './build')
     },
     historyApiFallback: true
   },
@@ -43,8 +43,8 @@ module.exports = {
   },
   plugins: [new HtmlWebpackPlugin({
     filename: "index.html",
-    template: "./dist/index.html",
-    favicon: "./dist/LogoFav.ico",
+    template: "./build/index.html",
+    favicon: "./build/LogoFav.ico",
     title: 'Production',
   })],
 }
